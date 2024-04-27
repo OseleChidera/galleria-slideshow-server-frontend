@@ -12,7 +12,7 @@ import ArtistInfo from './ArtistInfo'
 
 
 export const loaderFunctionPiece = async ({params})=>{
-  const fetchUrl = `https://galleria-slideshow-server.onrender.com/data/${params.id}`
+  const fetchUrl = `https://galleria-slideshow-server.glitch.me/data/${params.id}`
   const res = await fetch(fetchUrl ,  {method: "GET", headers: {"Content-type": "application/json;charset=UTF-8"}})
    const data  = await res.json()
    return data;
